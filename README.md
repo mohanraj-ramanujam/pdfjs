@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/mohanraj-ramanujam/pdfjs.svg?branch=master)](https://travis-ci.org/mohanraj-ramanujam/pdfjs)
+[![Gem Version](https://badge.fury.io/rb/pdfjs.svg)](http://badge.fury.io/rb/pdfjs)
 
 ### PDFJS Information
 
@@ -11,11 +12,14 @@ PDFJS is a RAILS ENGINE plugin for integrating the PDFJS into the RAILS applicat
 ### How To Integrate with RAILS application
 
 * Create a separate controller inherited from Pdfjs::PdfjsController
+
   ```ruby
   class PDFController < PdfjsController
   end
   ```
+
 * Define your action. EX: show.
+
   ```ruby
   class PDFController < PdfjsController
     def show
@@ -23,7 +27,9 @@ PDFJS is a RAILS ENGINE plugin for integrating the PDFJS into the RAILS applicat
     end
   end
   ```
+
 * Create the show template and set the PDF file path
+
   ```html
   <%= content_for :pdfjs do %>
     <%= javascript_tag do %>
@@ -34,4 +40,4 @@ PDFJS is a RAILS ENGINE plugin for integrating the PDFJS into the RAILS applicat
 
 ### Example applications
 
-* https://github.com/mohanraj-ramanujam/pdfjs
+* https://github.com/mohanraj-ramanujam/pdfjs_integration
