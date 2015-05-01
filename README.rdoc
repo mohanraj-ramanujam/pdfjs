@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/mohanraj-ramanujam/pdfjs.svg?branch=master)](https://travis-ci.org/mohanraj-ramanujam/pdfjs)
+[![Gem Version](https://badge.fury.io/rb/pdfjs.svg)](http://badge.fury.io/rb/pdfjs)
 
 ### PDFJS Information
 
