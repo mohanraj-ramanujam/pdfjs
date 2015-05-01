@@ -12,28 +12,28 @@ PDFJS is a RAILS ENGINE plugin for integrating the PDFJS into the RAILS applicat
 
 * Create a separate controller inherited from Pdfjs::PdfjsController
 
-  ```ruby
-  class PDFController < PdfjsController
-  end
-  ```
+```ruby
+class PDFController < PdfjsController
+end
+```
 * Define your action. EX: show.
 
-  ```ruby
-  class PDFController < PdfjsController
-    def show
-      @pdfjs_file = 'http://yoursite.com/pdfjs.pdf'
-    end
+```ruby
+class PDFController < PdfjsController
+  def show
+    @pdfjs_file = 'http://yoursite.com/pdfjs.pdf'
   end
-  ```
+end
+```
 * Create the show template and set the PDF file path
 
-  ```html
-  <%= content_for :pdfjs do %>
-    <%= javascript_tag do %>
-      window.DEFAULT_URL = '<%= @pdfjs_file.html_safe %>';
-    <% end %>
+```html
+<%= content_for :pdfjs do %>
+  <%= javascript_tag do %>
+    window.DEFAULT_URL = '<%= @pdfjs_file.html_safe %>';
   <% end %>
-  ```
+<% end %>
+```
 
 ### Example applications
 
