@@ -41,3 +41,7 @@ PDFJS is a RAILS ENGINE plugin for integrating the PDFJS into the RAILS applicat
 ### Example applications
 
 * https://github.com/mohanraj-ramanujam/pdfjs_integration
+
+### Contribution
+
+Feel free to give pull request if you interested to fix some issues/features. Thanks.
