@@ -9,7 +9,15 @@ PDFJS is a RAILS ENGINE plugin for integrating the PDFJS into the RAILS applicat
 * Is composing of PDFJS images, javascripts and stylesheets;
 * Is contains PDFJS HTML layout;
 
-### How To Integrate with RAILS application
+## Installation
+
+Add this line to your application's Gemfile (Rails):
+
+    gem 'pdfjs'
+    
+And then execute:
+
+    $ bundle
 
 * Create a separate controller inherited from Pdfjs::PdfjsController
 
